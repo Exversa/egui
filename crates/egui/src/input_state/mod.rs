@@ -368,7 +368,7 @@ impl InputState {
 
         {
             let dt = stable_dt.at_most(0.1);
-            let t = crate::emath::exponential_smooth_factor(0.90, 0.1, dt); // reach _% in _ seconds. TODO(emilk): parameterize
+            let t = crate::emath::exponential_smooth_factor(0.90, 0.6, dt); // reach _% in _ seconds. TODO(emilk): parameterize
 
             if unprocessed_scroll_delta != Vec2::ZERO {
                 for d in 0..2 {
